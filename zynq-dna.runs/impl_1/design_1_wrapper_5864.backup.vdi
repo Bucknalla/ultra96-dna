@@ -1,0 +1,744 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:23:50 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Mon Sep 16 14:08:46 2019
+# Process ID: 5864
+# Current directory: /home/alex/GitHub/zynq-dna/zynq-dna.runs/impl_1
+# Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: /home/alex/GitHub/zynq-dna/zynq-dna.runs/impl_1/design_1_wrapper.vdi
+# Journal file: /home/alex/GitHub/zynq-dna/zynq-dna.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/home/alex/.Xilinx/Vivado/Vivado_init.tcl'
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.2/data/ip'.
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1829.609 ; gain = 619.344 ; free physical = 8814 ; free virtual = 14143
+Command: link_design -top design_1_wrapper -part xczu3eg-sbva484-1-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/design_1.dcp' for cell 'design_1_i'
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2.1
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc]
+WARNING: [Vivado 12-584] No ports matched 'BT_AUD_CLK'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BT_AUD_FSYNC'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BT_AUD_IN'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BT_AUD_OUT'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BT_HCI_CTS'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BT_HCI_RTS'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CSI0_C_N'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CSI0_C_P'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CSI0_D0_N'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CSI0_D0_P'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CSI0_D1_N'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CSI0_D1_P'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CSI0_D2_N'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CSI0_D2_P'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CSI0_D3_N'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CSI0_D3_P'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CSI1_C_N'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CSI1_C_P'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CSI1_D0_N'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CSI1_D0_P'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CSI1_D1_N'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CSI1_D1_P'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DSI_CLK_N'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DSI_CLK_P'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DSI_D0_N'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DSI_D0_P'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DSI_D1_N'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DSI_D1_P'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DSI_D2_N'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DSI_D2_P'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DSI_D3_N'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DSI_D3_P'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HSIC_DATA'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HSIC_STR'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CSI0_MCLK'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CSI1_MCLK'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'FAN_PWM'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO_0'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO_1'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO_2'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO_3'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO_4'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO_5'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO_6'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO_7'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO_8'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO_9'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO_10'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO_11'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO_12'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO_13'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO_14'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO_15'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 26]]'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 65]]'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 66]]'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MIO0_UART1_TX'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MIO1_UART1_RX'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MIO13_SD0_DAT0_R'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MIO14_SD0_DAT1_R'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MIO15_SD0_DAT2_R'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:174]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:174]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MIO16_SD0_DAT3_R'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:175]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:175]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MIO21_SD0_CMD_R'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:176]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:176]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MIO22_SD0_CLK_R'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:177]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:177]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MIO24_SD0_DETECT'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:178]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:178]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MIO17_PS_LED3'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:181]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:181]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MIO18_PS_LED2'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:182]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:182]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MIO19_PS_LED1'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:183]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:183]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MIO20_PS_LED0'. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/constrs_1/new/ultra96.xdc]
+Parsing XDC File [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc] for cell 'design_1_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc] for cell 'design_1_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst'
+Parsing XDC File [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl:2]
+all_registers: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2328.238 ; gain = 71.031 ; free physical = 7980 ; free virtual = 13308
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 14 instances
+
+12 Infos, 69 Warnings, 69 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 2488.316 ; gain = 658.707 ; free physical = 7983 ; free virtual = 13311
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2488.316 ; gain = 0.000 ; free physical = 7973 ; free virtual = 13302
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 7964e3d0
+
+Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2488.316 ; gain = 0.000 ; free physical = 7955 ; free virtual = 13285
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 11 inverter(s) to 918 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1095ef384
+
+Time (s): cpu = 00:00:00.72 ; elapsed = 00:00:00.44 . Memory (MB): peak = 2488.316 ; gain = 0.000 ; free physical = 7960 ; free virtual = 13290
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: edef02d8
+
+Time (s): cpu = 00:00:00.81 ; elapsed = 00:00:00.53 . Memory (MB): peak = 2488.316 ; gain = 0.000 ; free physical = 7960 ; free virtual = 13290
+INFO: [Opt 31-389] Phase Constant propagation created 2 cells and removed 20 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 2da01327
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.91 . Memory (MB): peak = 2488.316 ; gain = 0.000 ; free physical = 7955 ; free virtual = 13284
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 629 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 2da01327
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2488.316 ; gain = 0.000 ; free physical = 7955 ; free virtual = 13284
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 59da23f2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2488.316 ; gain = 0.000 ; free physical = 7954 ; free virtual = 13284
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 59da23f2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2488.316 ; gain = 0.000 ; free physical = 7954 ; free virtual = 13284
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2488.316 ; gain = 0.000 ; free physical = 7954 ; free virtual = 13284
+Ending Logic Optimization Task | Checksum: 59da23f2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2488.316 ; gain = 0.000 ; free physical = 7954 ; free virtual = 13284
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 59da23f2
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2488.316 ; gain = 0.000 ; free physical = 7954 ; free virtual = 13284
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 59da23f2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2488.316 ; gain = 0.000 ; free physical = 7954 ; free virtual = 13284
+INFO: [Common 17-83] Releasing license: Implementation
+28 Infos, 69 Warnings, 69 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint '/home/alex/GitHub/zynq-dna/zynq-dna.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/alex/GitHub/zynq-dna/zynq-dna.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3199.359 ; gain = 711.043 ; free physical = 7921 ; free virtual = 13253
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3199.359 ; gain = 0.000 ; free physical = 7912 ; free virtual = 13244
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 04cdfbab
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3199.359 ; gain = 0.000 ; free physical = 7912 ; free virtual = 13244
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3199.359 ; gain = 0.000 ; free physical = 7912 ; free virtual = 13244
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: c16a4086
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 3586.098 ; gain = 386.738 ; free physical = 6901 ; free virtual = 12362
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: cd82b6a6
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:48 . Memory (MB): peak = 3625.141 ; gain = 425.781 ; free physical = 6860 ; free virtual = 12323
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: cd82b6a6
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:48 . Memory (MB): peak = 3625.141 ; gain = 425.781 ; free physical = 6860 ; free virtual = 12323
+Phase 1 Placer Initialization | Checksum: cd82b6a6
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 3625.141 ; gain = 425.781 ; free physical = 6860 ; free virtual = 12323
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1735e8bde
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 3697.176 ; gain = 497.816 ; free physical = 6836 ; free virtual = 12301
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3713.184 ; gain = 0.000 ; free physical = 6820 ; free virtual = 12286
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+|  Optimization       |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: 1564e2ab9
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6820 ; free virtual = 12286
+Phase 2 Global Placement | Checksum: 19edb985a
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6820 ; free virtual = 12286
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 19edb985a
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6820 ; free virtual = 12286
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1ed52a62a
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6818 ; free virtual = 12285
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1ea6dd9a8
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6818 ; free virtual = 12285
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1ea6dd9a8
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6818 ; free virtual = 12285
+
+Phase 3.5 Small Shape Clustering
+Phase 3.5 Small Shape Clustering | Checksum: 1479b4a4d
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6816 ; free virtual = 12283
+
+Phase 3.6 DP Optimization
+Phase 3.6 DP Optimization | Checksum: 11b47fd8f
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:56 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6823 ; free virtual = 12289
+
+Phase 3.7 Flow Legalize Slice Clusters
+Phase 3.7 Flow Legalize Slice Clusters | Checksum: 10622b031
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:57 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6825 ; free virtual = 12292
+
+Phase 3.8 Slice Area Swap
+Phase 3.8 Slice Area Swap | Checksum: 1ac6dc8f4
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:57 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6820 ; free virtual = 12286
+
+Phase 3.9 Commit Slice Clusters
+Phase 3.9 Commit Slice Clusters | Checksum: 1189caed6
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:57 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6821 ; free virtual = 12288
+
+Phase 3.10 Re-assign LUT pins
+Phase 3.10 Re-assign LUT pins | Checksum: 109468bce
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:57 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6820 ; free virtual = 12287
+
+Phase 3.11 Pipeline Register Optimization
+Phase 3.11 Pipeline Register Optimization | Checksum: 109468bce
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:57 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6821 ; free virtual = 12288
+Phase 3 Detail Placement | Checksum: 109468bce
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:57 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6821 ; free virtual = 12288
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 21fc3e181
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 21fc3e181
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:58 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6825 ; free virtual = 12292
+INFO: [Place 30-746] Post Placement Timing Summary WNS=6.210. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 211527b9e
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:58 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6825 ; free virtual = 12292
+Phase 4.1 Post Commit Optimization | Checksum: 211527b9e
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:58 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6825 ; free virtual = 12292
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 211527b9e
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:58 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6826 ; free virtual = 12293
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 259de4343
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:01:00 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6818 ; free virtual = 12285
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 20c6c782a
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:01:00 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6818 ; free virtual = 12285
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 20c6c782a
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:01:00 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6818 ; free virtual = 12285
+Ending Placer Task | Checksum: 16e51ab91
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:01:00 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6842 ; free virtual = 12309
+INFO: [Common 17-83] Releasing license: Implementation
+49 Infos, 69 Warnings, 69 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:13 ; elapsed = 00:01:06 . Memory (MB): peak = 3713.184 ; gain = 513.824 ; free physical = 6842 ; free virtual = 12309
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.82 ; elapsed = 00:00:00.24 . Memory (MB): peak = 3713.184 ; gain = 0.000 ; free physical = 6826 ; free virtual = 12304
+INFO: [Common 17-1381] The checkpoint '/home/alex/GitHub/zynq-dna/zynq-dna.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.16 . Memory (MB): peak = 3713.184 ; gain = 0.000 ; free physical = 6824 ; free virtual = 12294
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00.73 ; elapsed = 00:00:00.68 . Memory (MB): peak = 3713.184 ; gain = 0.000 ; free physical = 6836 ; free virtual = 12307
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.13 . Memory (MB): peak = 3713.184 ; gain = 0.000 ; free physical = 6836 ; free virtual = 12306
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: afcfd51c ConstDB: 0 ShapeSum: 75f60ed0 RouteDB: 488bc7a5
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: cb3bec79
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6656 ; free virtual = 12128
+Post Restoration Checksum: NetGraph: 5c67f01c NumContArr: 9a4f99e2 Constraints: 3a38c1b2 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 130f04bb0
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6656 ; free virtual = 12128
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 130f04bb0
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6616 ; free virtual = 12089
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 130f04bb0
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6616 ; free virtual = 12089
+
+Phase 2.4 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.4 Global Clock Net Routing | Checksum: 169853623
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:21 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6575 ; free virtual = 12048
+
+Phase 2.5 Update Timing
+Phase 2.5 Update Timing | Checksum: 17ac3036c
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:22 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6580 ; free virtual = 12052
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=6.282  | TNS=0.000  | WHS=-0.046 | THS=-4.948 |
+
+Phase 2 Router Initialization | Checksum: 149cd6e6a
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6577 ; free virtual = 12050
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1df19a83d
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:23 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6568 ; free virtual = 12041
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1146
+ Number of Nodes with overlaps = 111
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.545  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 4.1 Global Iteration 0 | Checksum: d1623bfa
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:26 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6574 ; free virtual = 12047
+
+Phase 4.2 Additional Iteration for Hold
+Phase 4.2 Additional Iteration for Hold | Checksum: 9f9ea296
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:26 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6574 ; free virtual = 12047
+Phase 4 Rip-up And Reroute | Checksum: 9f9ea296
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:26 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6574 ; free virtual = 12047
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 83ae4629
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:26 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6576 ; free virtual = 12049
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 83ae4629
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:26 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6576 ; free virtual = 12049
+Phase 5 Delay and Skew Optimization | Checksum: 83ae4629
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:26 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6576 ; free virtual = 12049
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 150da9eab
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:26 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6572 ; free virtual = 12045
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.545  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 150da9eab
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:26 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6572 ; free virtual = 12045
+Phase 6 Post Hold Fix | Checksum: 150da9eab
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:26 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6572 ; free virtual = 12045
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.707112 %
+  Global Horizontal Routing Utilization  = 0.874294 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 8bd60c46
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:27 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6571 ; free virtual = 12044
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 8bd60c46
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:27 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6571 ; free virtual = 12044
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 8bd60c46
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:27 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6571 ; free virtual = 12043
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=5.545  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 8bd60c46
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:27 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6572 ; free virtual = 12045
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:27 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6631 ; free virtual = 12104
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+66 Infos, 69 Warnings, 69 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:03 ; elapsed = 00:00:33 . Memory (MB): peak = 4179.145 ; gain = 465.961 ; free physical = 6631 ; free virtual = 12104
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.82 ; elapsed = 00:00:00.26 . Memory (MB): peak = 4179.145 ; gain = 0.000 ; free physical = 6613 ; free virtual = 12099
+INFO: [Common 17-1381] The checkpoint '/home/alex/GitHub/zynq-dna/zynq-dna.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/alex/GitHub/zynq-dna/zynq-dna.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 4377.160 ; gain = 198.016 ; free physical = 6610 ; free virtual = 12087
+INFO: [runtcl-4] Executing : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/alex/GitHub/zynq-dna/zynq-dna.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+INFO: [Power 33-23] Power model is not available for DNA_PORTE2_inst
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+79 Infos, 69 Warnings, 69 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4377.160 ; gain = 0.000 ; free physical = 6570 ; free virtual = 12052
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_routed.rpt -pb design_1_wrapper_bus_skew_routed.pb -rpx design_1_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 16 14:11:44 2019...

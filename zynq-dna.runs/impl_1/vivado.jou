@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:23:50 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Mon Sep 16 16:52:58 2019
+# Process ID: 23154
+# Current directory: /home/alex/GitHub/zynq-dna/zynq-dna.runs/impl_1
+# Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: /home/alex/GitHub/zynq-dna/zynq-dna.runs/impl_1/design_1_wrapper.vdi
+# Journal file: /home/alex/GitHub/zynq-dna/zynq-dna.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

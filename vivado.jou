@@ -1,0 +1,101 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:23:50 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Mon Sep 16 13:57:30 2019
+# Process ID: 3540
+# Current directory: /home/alex/GitHub/zynq-dna
+# Command line: vivado zynq-dna.xpr
+# Log file: /home/alex/GitHub/zynq-dna/vivado.log
+# Journal file: /home/alex/GitHub/zynq-dna/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project zynq-dna.xpr
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+open_bd_design {/home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/design_1.bd}
+validate_bd_design -force
+make_wrapper -files [get_files /home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse /home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top design_1_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run design_1_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+delete_bd_objs [get_bd_nets reset_rtl_1] [get_bd_nets proc_sys_reset_0_interconnect_aresetn] [get_bd_cells proc_sys_reset_0]
+delete_bd_objs [get_bd_ports reset_rtl]
+validate_bd_design
+delete_bd_objs [get_bd_intf_nets ps8_0_axi_periph_M00_AXI] [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM1_FPD] [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM0_FPD] [get_bd_nets proc_sys_reset_0_peripheral_aresetn] [get_bd_cells ps8_0_axi_periph]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD} Slave {/zynq_AXI_DNA_v1_0_0/s00_axi} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins zynq_AXI_DNA_v1_0_0/s00_axi]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM1_FPD} Slave {/zynq_AXI_DNA_v1_0_0/s00_axi} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM1_FPD]
+generate_target all [get_files  /home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files /home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+reset_run design_1_synth_1
+launch_runs -jobs 8 design_1_synth_1
+export_simulation -of_objects [get_files /home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/alex/GitHub/zynq-dna/zynq-dna.ip_user_files/sim_scripts -ip_user_files_dir /home/alex/GitHub/zynq-dna/zynq-dna.ip_user_files -ipstatic_source_dir /home/alex/GitHub/zynq-dna/zynq-dna.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/alex/GitHub/zynq-dna/zynq-dna.cache/compile_simlib/modelsim} {questa=/home/alex/GitHub/zynq-dna/zynq-dna.cache/compile_simlib/questa} {ies=/home/alex/GitHub/zynq-dna/zynq-dna.cache/compile_simlib/ies} {xcelium=/home/alex/GitHub/zynq-dna/zynq-dna.cache/compile_simlib/xcelium} {vcs=/home/alex/GitHub/zynq-dna/zynq-dna.cache/compile_simlib/vcs} {riviera=/home/alex/GitHub/zynq-dna/zynq-dna.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file mkdir /home/alex/GitHub/zynq-dna/zynq-dna.sdk
+file copy -force /home/alex/GitHub/zynq-dna/zynq-dna.runs/impl_1/design_1_wrapper.sysdef /home/alex/GitHub/zynq-dna/zynq-dna.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace /home/alex/GitHub/zynq-dna/zynq-dna.sdk -hwspec /home/alex/GitHub/zynq-dna/zynq-dna.sdk/design_1_wrapper.hdf
+launch_sdk -workspace /home/alex/GitHub/zynq-dna/zynq-dna.sdk -hwspec /home/alex/GitHub/zynq-dna/zynq-dna.sdk/design_1_wrapper.hdf
+launch_sdk -workspace /home/alex/GitHub/zynq-dna/zynq-dna.sdk -hwspec /home/alex/GitHub/zynq-dna/zynq-dna.sdk/design_1_wrapper.hdf
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0
+endgroup
+delete_bd_objs [get_bd_cells ila_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0
+endgroup
+delete_bd_objs [get_bd_cells system_ila_0]
+update_module_reference design_1_zynq_AXI_DNA_v1_0_0_0
+update_module_reference design_1_zynq_AXI_DNA_v1_0_0_0
+update_module_reference design_1_zynq_AXI_DNA_v1_0_0_0
+generate_target all [get_files  /home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files /home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+reset_run design_1_synth_1
+launch_runs -jobs 8 design_1_synth_1
+export_simulation -of_objects [get_files /home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/alex/GitHub/zynq-dna/zynq-dna.ip_user_files/sim_scripts -ip_user_files_dir /home/alex/GitHub/zynq-dna/zynq-dna.ip_user_files -ipstatic_source_dir /home/alex/GitHub/zynq-dna/zynq-dna.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/alex/GitHub/zynq-dna/zynq-dna.cache/compile_simlib/modelsim} {questa=/home/alex/GitHub/zynq-dna/zynq-dna.cache/compile_simlib/questa} {ies=/home/alex/GitHub/zynq-dna/zynq-dna.cache/compile_simlib/ies} {xcelium=/home/alex/GitHub/zynq-dna/zynq-dna.cache/compile_simlib/xcelium} {vcs=/home/alex/GitHub/zynq-dna/zynq-dna.cache/compile_simlib/vcs} {riviera=/home/alex/GitHub/zynq-dna/zynq-dna.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_bd_design {/home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_intf_nets ps8_0_axi_periph_M00_AXI] [get_bd_cells zynq_AXI_DNA_v1_0_0]
+update_compile_order -fileset sources_1
+update_module_reference design_1_zynq_AXI_DNA_v1_0_0_0
+create_bd_cell -type module -reference AXI_DNA_v1_0 AXI_DNA_v1_0_0
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD} Slave {/AXI_DNA_v1_0_0/s00_axi} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins AXI_DNA_v1_0_0/s00_axi]
+delete_ip_run [get_files -of_objects [get_fileset design_1] /home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/design_1.bd]
+set_property synth_checkpoint_mode Hierarchical [get_files  /home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  /home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_zynq_ultra_ps_e_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_rst_ps8_0_100M_0] }
+catch { config_ip_cache -export [get_ips -all design_1_xbar_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_ds_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_ds_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+export_ip_user_files -of_objects [get_files /home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 8 {design_1_zynq_ultra_ps_e_0_0_synth_1 design_1_rst_ps8_0_100M_0_synth_1 design_1_xbar_1_synth_1 design_1_AXI_DNA_v1_0_0_0_synth_1 design_1_auto_ds_1_synth_1 design_1_auto_pc_1_synth_1 design_1_auto_ds_0_synth_1 design_1_auto_pc_0_synth_1}
+export_simulation -of_objects [get_files /home/alex/GitHub/zynq-dna/zynq-dna.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/alex/GitHub/zynq-dna/zynq-dna.ip_user_files/sim_scripts -ip_user_files_dir /home/alex/GitHub/zynq-dna/zynq-dna.ip_user_files -ipstatic_source_dir /home/alex/GitHub/zynq-dna/zynq-dna.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/alex/GitHub/zynq-dna/zynq-dna.cache/compile_simlib/modelsim} {questa=/home/alex/GitHub/zynq-dna/zynq-dna.cache/compile_simlib/questa} {ies=/home/alex/GitHub/zynq-dna/zynq-dna.cache/compile_simlib/ies} {xcelium=/home/alex/GitHub/zynq-dna/zynq-dna.cache/compile_simlib/xcelium} {vcs=/home/alex/GitHub/zynq-dna/zynq-dna.cache/compile_simlib/vcs} {riviera=/home/alex/GitHub/zynq-dna/zynq-dna.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force /home/alex/GitHub/zynq-dna/zynq-dna.runs/impl_1/design_1_wrapper.sysdef /home/alex/GitHub/zynq-dna/zynq-dna.sdk/design_1_wrapper.hdf
+
+regenerate_bd_layout

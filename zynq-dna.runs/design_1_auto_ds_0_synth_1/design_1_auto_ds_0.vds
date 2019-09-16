@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:23:50 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Mon Sep 16 16:51:22 2019
+# Process ID: 22943
+# Current directory: /home/alex/GitHub/zynq-dna/zynq-dna.runs/design_1_auto_ds_0_synth_1
+# Command line: vivado -log design_1_auto_ds_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_auto_ds_0.tcl
+# Log file: /home/alex/GitHub/zynq-dna/zynq-dna.runs/design_1_auto_ds_0_synth_1/design_1_auto_ds_0.vds
+# Journal file: /home/alex/GitHub/zynq-dna/zynq-dna.runs/design_1_auto_ds_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/home/alex/.Xilinx/Vivado/Vivado_init.tcl'
+source design_1_auto_ds_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = 97b44aadeb7a8375.
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 16 16:51:36 2019...
